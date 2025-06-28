@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+.link-effect::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.link-effect:hover::after {
+    content: '';
+    width: 100%;
+}
